@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/css/fontawesome.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/css/solid.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/css/brands.css">
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+     -->
+     <!-- FontAwesome 6.2.0 CSS -->
+     <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+     /> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./public/style.css">
+
+    <style>
+        @media screen and (min-width: 992px) {
+            main > section {
+                display: flex;
+                align-items: center;
+                gap: 5em;
+            }
+            .services {
+                width: 50%;
+                margin: 0 auto;
+            }
+        }
+    </style>
+
+    <title>Acceuil</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <div>
+                    <span class="logo bg-secondary">AB</span>
+                    <span>Abdoul Bagui</span>
+                </div>
+            </a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Acceuil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./public/skills.html">Compétences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./public/formation.html">Formation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./public/about.html">A propos</a>
+                    </li>
+                </ul>
+                <div class="mt-3 mt-md-0 mt-lg-0 d-flex">
+                    <button type="button" class="btn btn-secondary me-3" data-bs-toggle="modal"
+                        data-bs-target="#modalId">
+                        Contacter
+                    </button>
+                    <a class="btn btn-outline-secondary" href="./assets/CV-me.pdf" download><i
+                            class="fas fa-download"></i> Télécharger CV</a>
+                </div>
+
+
+            </div>
+        </div>
+    </nav>
+
+    <main class="mb-4">
+        <section>
+            <section>
+                <hr>
+                <h1 class="display-1 mb-0 name">ABDOUL-BAGUI</h1>
+                <H1>Développeur web fullstack</H1>
+                <p>
+                    Je suis un développeur informaticien et étudiant à l'université. Mon travail est de créér des sites,
+                    applications et logiciels qui ont pour objectif de résourdre des problèmes...Entrer en contact avec
+                    moi dans l'une des plateformes suivantes:
+                </p>
+                <div class="social-media">
+                    <a href="https://wa.me/237659063411"><i class="fab fa-whatsapp"></i></a>
+                    <a href="mailto:abdoulbagui094@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/AbdoulBagui094"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/abdoul-bagui-4873ab283"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+
+                <div class="mt-3 d-flex">
+                    <a class="btn btn-secondary me-3 w-50" href="./assets/CV-me.pdf" download><i
+                            class="fas fa-download"></i> Télécharger CV</a>
+                    <a type="button" href="./public/about.html" class="btn btn-outline-secondary w-50"><i
+                            class="fas fa-user"> </i> A propos</a>
+                </div>
+            </section>
+
+            <figure>
+                <img src="./assets/me.jpg" alt="" id="me" class="shadow-lg">
+            </figure>
+        </section>
+
+        <div class="services shadow-lg p-3 mt-3">
+            <hr>
+            <h1>Mes services</h1>
+            <ul class="list-group">
+                <li class="list-group-item">Création site web</li>
+                <li class="list-group-item">Conception d'applications web</li>
+                <li class="list-group-item">Conception logiciels</li>
+                <li class="list-group-item">Création d'application mobiles</li>
+                <li class="list-group-item">Conception de documents bien mis en formes</li>
+                <li class="list-group-item">Design des applications</li>
+            </ul>
+            <a class="btn btn-secondary w-100 mt-3 mb-3" href="./public/skills.html" role="button">Voir mes
+                compétences</a>
+        </div>
+
+
+    </main>
+
+    <!-- Modal trigger button -->
+
+    <div class="modal fade" id="modalId" tabindex="-1">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="d-flex justify-content-between align-items-start"">
+                        <h3 class=" modal-title">
+                        MES CONTACTS
+                        </h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <section class="contact mb-3 mt-3">
+                        <div class="social-media">
+                            <a href="https://wa.me/237659063411"><i class="fab fa-whatsapp"></i>6 59 06 34 11</a>
+                            <a href="mailto:abdoulbagui094@gmail.com"><i
+                                    class="fas fa-envelope"></i>abdoulbagui094@gmail.com</a>
+                            <a href="https://github.com/AbdoulBagui094"><i class="fab fa-github"></i>AbdoulBagui094</a>
+                            <a href="https://www.linkedin.com/in/abdoul-bagui-4873ab283"><i
+                                    class="fab fa-linkedin-in"></i>ABDOUL BAGUI</a>
+                        </div>
+                    </section>
+                    <div>
+                        <button type="button" class="btn btn-danger w-100" data-bs-dismiss="modal">
+                            Fermer
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="load">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </section>
+
+    <script src="./public/main.js"></script>
+
+    <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
